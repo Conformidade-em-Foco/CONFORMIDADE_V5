@@ -1,0 +1,82 @@
+.contato-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+}
+
+.contato-container img.logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.contato-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contato-container p {
+    margin-bottom: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-contato {
+    margin-top: 2rem;
+    line-height: 1.7;
+}
+
+.info-contato strong {
+    color: #333;
+}
+
+blockquote {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #667eea;
+    padding-left: 1rem;
+}
+
+.creditos {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    .contato-container {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,26 @@
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    background: #1e1e1e;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.slide {
+    display: none;
+    animation: fade 1s ease-in-out;
+    text-align: center;
+    color: #fff;
+}
+
+.slide.active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}

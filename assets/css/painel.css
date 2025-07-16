@@ -1,0 +1,153 @@
+/* Reset e base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    max-width: 960px;
+    margin: 4rem auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Inputs e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Lista de usuários */
+.lista-usuarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.lista-usuarios li {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #667eea;
+    line-height: 1.6;
+}
+
+/* Mensagens no chat */
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    height: 300px;
+    overflow-y: scroll;
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.msg {
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.msg.de {
+    text-align: right;
+    color: #4caf50;
+}
+
+.msg.para {
+    text-align: left;
+    color: #333;
+}
+
+/* Aviso de status */
+.status-disponivel {
+    color: green;
+    font-weight: bold;
+}
+
+.status-indisponivel {
+    color: gray;
+    font-weight: bold;
+}
+
+/* Alertas visuais */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+    color: #721c24;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .lista-usuarios {
+        grid-template-columns: 1fr;
+    }
+}

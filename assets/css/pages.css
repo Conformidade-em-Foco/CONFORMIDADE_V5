@@ -1,0 +1,16 @@
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    color: white;
+}
+.checklist-container {
+    background: white;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
